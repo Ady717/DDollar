@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dickdollar",
+	"version": "${version}",
+	"name": "Dick Dollar",
+	"description": "Ihr kleinen HS ",
+	"authors": [
+		"Nutten und koks!"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dickdollar/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.dickdollar.DickDollar"
+		],
+		"fabric-datagen": [
+			"com.dickdollar.DickDollarDataGenerator"
+		],
+		"client": [
+			"com.dickdollar.DickDollarClient"
+		]
+	},
+	"mixins": [
+		"dickdollar.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
